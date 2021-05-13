@@ -1,0 +1,39 @@
+/* color: #EAC926;
+   color: #03264C;
+   color: #1259c3;
+   color: #666;
+   color: #ebebeb;
+   color: #39b54a;
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px; */
+
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    background-color: #EAC926;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+   
+
+}
+
+.titulares{
+    font-size: 12px
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+   }
