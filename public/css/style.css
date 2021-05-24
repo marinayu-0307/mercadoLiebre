@@ -32,8 +32,9 @@ header {
 }
 
 #logo{
-    width: 40%;
-    margin-bottom: 15px;
+    width: 35%;
+    margin: 10px 0px;
+    /* margin-bottom: 15px; */
 }
 
 .barraBusqueda {
@@ -41,7 +42,8 @@ header {
     border: solid rgba(0,0,0,0.5) 1px;
     background-color: white;
     padding: 5px;
-    max-width: 70%;
+    margin: 20px;
+    max-width: 55%;
     border-radius: 5px;
     font-weight: lighter;
     margin-bottom: 15px;
@@ -50,9 +52,14 @@ header {
     align-items: center;
 }
 
+.nav-superior-mobile{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
 input{
     border: none;
-    font-size: initial;
     font-weight: 250;
 }
 
@@ -65,9 +72,15 @@ h3{
     text-align: center;
 }
 
+.header-copy{
+    text-align: right;
+    font-weight: normal;
+}
+
 .nav-menu{
     display: none;
 }
+
 .nav-item{
     display:flex;
     /* flex-wrap: wrap; */
@@ -84,21 +97,15 @@ text-decoration: none;
 color: black
 }
 
-.fa-bars{
-    font-size: 2em;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-
 .boton-burger{
     border-radius: 5px;
-    background-color:#1259c3;
+    background-color: #03264c;
+    color: white;
+    display: block;
+    padding: 10px;
     max-width: 45px;
     text-align: center;
-    display:flex;
-    flex-wrap: wrap;
-    align-self: center;
+    margin: auto;
 }
 
 /* MAIN */
@@ -214,6 +221,21 @@ footer p{
 
 @media(min-width: 361px)
 {
+    #logo{
+        max-width: 25vw;
+    }
+
+    .barraBusqueda {
+        max-width: 40vw;
+        max-height: 30px;
+        margin: 0px 25px;
+    }
+
+    .header-copy{
+        max-width: 18vw;
+        margin-left: 5vw;
+    }
+
     article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
@@ -229,9 +251,43 @@ footer p{
     .boton-burger{
         display: none;
     }
+
+    .nav-superior{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 15px;
+    }
+
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-menu li{
+        padding: 0px 5px;
+        /* border: solid black 1px; */
+
+    }
+
 }
 
 @media(min-width: 761px){
+
+    #logo{
+        max-width: 20vw;
+    }
+
+    .barraBusqueda {
+        margin: 0px 8vw 0px 8vw;
+    }
     article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
@@ -246,5 +302,70 @@ footer p{
 
     .boton-burger{
         display: none;
+    }
+
+    .nav-superior{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-menu li{
+        padding: 0px 10px;
+        font-size: 14px;
+        /* border: solid black 1px; */
+
+    }
+}
+
+@media(min-width: 1200px){
+
+    #logo{
+        max-width: 15vw;
+    }
+
+    .nav-superior{
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 25px;
+        display: flex;
+    }
+
+
+    .nav-item{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .nav-menu li{
+        padding: 0px 20px;
+        font-size: 19px;
+    }
+
+    .barraBusqueda {
+        max-width: 40vw;
+        max-height: 35px;
+        margin: 0px 15vw 0px 10vw;
+    }
+
+    .searchbar-imput{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .header-copy{
+        font-size: 17px;;
     }
 }
