@@ -398,6 +398,7 @@ footer p{
     article{
         max-width: 42vw;
         margin-bottom: 60px;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
     article .section-article-descripcion{
@@ -406,10 +407,6 @@ footer p{
 
     article .descripciones{
         padding: 0px 25px 25px 35px;
-    }
-
-    article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
     .fa-truck{
@@ -449,8 +446,16 @@ footer p{
         padding: 0px 10px;
         font-size: 14px;
         /* border: solid black 1px; */
-
     }
+
+    footer .descripciones{
+        margin: 5px 0px 10px 0px;
+    }
+
+    .iconofooter{
+        font-size: 3em;
+    }
+
 }
 
 @media(min-width: 1200px){
