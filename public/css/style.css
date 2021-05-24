@@ -11,6 +11,7 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
+       /* border: solid black 1px; */
    }
 
 body{
@@ -19,6 +20,7 @@ body{
     font-weight: 300;
     font-size: 12px;
     background-color: #ebebeb;
+    margin: auto;
 }
 
 /* HEADER */
@@ -29,10 +31,16 @@ header {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    margin: auto;
+}
+
+.header-bloque{
+    max-width: 1200px;
+    margin: auto;
 }
 
 #logo{
-    width: 35%;
+    width: 47%;
     margin: 10px 0px;
     /* margin-bottom: 15px; */
 }
@@ -42,8 +50,8 @@ header {
     border: solid rgba(0,0,0,0.5) 1px;
     background-color: white;
     padding: 5px;
-    margin: 20px;
-    max-width: 55%;
+    margin: 20px 0px 20px 10px;
+    max-width: 50%;
     border-radius: 5px;
     font-weight: lighter;
     margin-bottom: 15px;
@@ -58,13 +66,17 @@ header {
     align-items: center;
 }
 
+.nav-superior-tablet{
+    display: none;
+}
+
 input{
     border: none;
     font-weight: 250;
 }
 
 .searchbar-imput{
-    width: 50vw;
+    width: 40vw;
 }
 
 h3{
@@ -120,6 +132,11 @@ main{
     margin:auto;
 }
 
+.main-row{
+    max-width: 1200px;
+    margin:auto
+}
+
 #banner{
     width: 100%; 
     padding: none;
@@ -133,6 +150,20 @@ img{
 section{
     padding: 5%;
 }
+
+/* main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    border: 1px solid #39b54a;
+    background:#fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px
+} */
+
 article {
     margin-bottom: 10px;
     background-color: white;
@@ -141,27 +172,42 @@ article {
 
 article .section-article-descripcion{
     border-top: solid #ebebeb 1px;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    /* border: dashed red 1px */
+}
+
+article .descripciones{
+    padding: 0px 25px 25px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
     /* border: dashed red 1px */
 }
 
 .fa-truck{
     color:#39b54a;
     padding: 15px;
-    font-size: 1.7em;
+    font-size: 1em;
 }
 
 .fa-truck-border{
     border: solid 1px #39b54a;
-    border-radius: 70px;
-    max-width: 4em;
-    max-height: 4em;
+    background:#fff;
+    border-radius: 50%;
+    max-width: 3em;
+    max-height: 3em;
     text-align: center;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    position: relative;
+    left: 65vw;
+    top:-35px
 }
 
 .titulares{
@@ -169,6 +215,7 @@ article .section-article-descripcion{
     text-align: center;
     color: #666;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .precios {
@@ -179,6 +226,7 @@ article .section-article-descripcion{
     font-size: 16px;
     color:#39b54a;
     padding-bottom: 8px;
+    margin-left: 10px;
    }
 
 .descripciones {
@@ -226,14 +274,19 @@ footer p{
     }
 
     .barraBusqueda {
-        max-width: 40vw;
+        max-width: 30vw;
         max-height: 30px;
         margin: 0px 25px;
     }
 
+    .searchbar-imput {
+        width: 25vw;
+    }
     .header-copy{
-        max-width: 18vw;
-        margin-left: 5vw;
+        max-width: 30vw;
+        margin-left: 2vw;
+        font-size: 12px;
+        margin-bottom: 0px;
     }
 
     article {
@@ -281,15 +334,93 @@ footer p{
 
 @media(min-width: 761px){
 
-    #logo{
-        max-width: 20vw;
+    header{
+        padding-top: 15px;
+        max-height: 21vh;
     }
 
-    .barraBusqueda {
-        margin: 0px 8vw 0px 8vw;
+    #logo{
+        max-width: 25vw;
     }
+
+    .nav-superior-mobile{
+        display: none;
+    }
+
+    .nav-superior .header-copy{
+        display: none;
+    }
+
+    .nav-superior-tablet, .header-copy{
+        display: block
+    }
+
+    .nav-superior-tablet{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+
+    .header-copy{
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    h3{
+        margin-bottom: 0px;
+    }
+
+    .main-row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .main-row-productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 2.5vh;
+        padding-bottom: 0.5vh;
+    }
+  
+    .titulares{
+        margin: 0px;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    article{
+        max-width: 42vw;
+        margin-bottom: 60px;
+    }
+
+    article .section-article-descripcion{
+        padding: 5px 0px 0px 0px;
+    }
+
+    article .descripciones{
+        padding: 0px 25px 25px 35px;
+    }
+
     article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .fa-truck{
+        font-size: 1.2em;
+    }
+    
+    .fa-truck-border{
+        left: 75vw;
+        position: relative;
+        left: 81%;
+        top: -25px
     }
 
     .descripciones {
@@ -302,14 +433,6 @@ footer p{
 
     .boton-burger{
         display: none;
-    }
-
-    .nav-superior{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items:center;
     }
 
     .nav-menu{
@@ -332,40 +455,133 @@ footer p{
 
 @media(min-width: 1200px){
 
+    header{
+        padding-top: 15px;
+        max-height: 21vh;
+    }
     #logo{
         max-width: 15vw;
     }
 
-    .nav-superior{
-        max-width: 1200px;
-        margin: auto;
-        margin-bottom: 25px;
-        display: flex;
+    .nav-superior-mobile{
+        display: none;
     }
 
+    .nav-superior .header-copy{
+        display: none;
+    }
+
+    .nav-superior-tablet, .header-copy{
+        display: block;
+    }
+
+    .nav-superior-tablet{
+        display: flex;
+        margin-bottom: 2vh;
+        margin: auto;
+    }
 
     .nav-item{
-        max-width: 1200px;
         margin: auto;
+        margin-top: 3vh;
     }
 
     .nav-menu li{
-        padding: 0px 20px;
         font-size: 19px;
     }
 
     .barraBusqueda {
-        max-width: 40vw;
+        min-width: 420px;
+        max-width: 660px;
         max-height: 35px;
-        margin: 0px 15vw 0px 10vw;
+        margin: auto;
     }
 
     .searchbar-imput{
         padding: 5px;
         font-size: 15px;
+        min-width: 95%;
     }
 
     .header-copy{
-        font-size: 17px;;
+        font-size: 17px;
+        max-width: 30vw;
+    }
+
+    .main-row{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 30px 40px 0px 40px;
+    }
+
+    .main-row-productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 2.5vh;
+        padding-bottom: 0.5vh;
+    }
+  
+    .titulares{
+        margin: 0px;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    article{
+        max-width: 250px;
+    }
+
+    article .section-article-descripcion{
+        padding: 5px 0px 0px 0px;
+    }
+
+    article .descripciones{
+        padding: 0px 25px 25px 35px;
+    }
+
+
+    .fa-truck{
+        font-size: 1.3em;
+    }
+    
+    .fa-truck-border{
+        left: 80vw;
+        position: relative;
+        left: 75%;
+        top: -25px
+    }
+    
+    footer{
+        display: block;
+        margin-top: 5vh;
+    }
+    .footer-elements{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px 5%;
+        margin-top: 25px;
+    }
+
+    footer .descripciones{
+        margin: 10px 0px;
+    }
+
+    .iconofooter{
+        font-size: 3em;
+    }
+
+    section ul{
+        max-width: 25vw;
+    }
+
+    .copyright{
+        display:block;
+        text-align: center
     }
 }
