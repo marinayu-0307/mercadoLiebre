@@ -1,8 +1,9 @@
 /* boton disable #efefef */
 
-.register-main{ 
+.login-main{ 
     text-align: center;
     font-size: 16px;
+    margin: 75px 0px;
 }
 
 .login-registro{
@@ -19,7 +20,7 @@
 }
 
 .login-registro h3{
-    font-size: 22px;
+    /* font-size: 22px; */
     font-weight: 500;
 }
 
@@ -36,8 +37,6 @@
     margin-left: 25px;
     margin-top: 22px;
 }
-
-/* ------------------------------------ LOGIN ------------------------------------*/
 
 .h3-login {
     max-width: 90%;
@@ -56,7 +55,8 @@
     border: none;
     display: block;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .button-forgot{
@@ -68,21 +68,7 @@
 
 }
 
-/* .register-cta-round{
-    background-color: #1259c3;
-    color: white;
-    font-size: 17px;
-    display: block;
-    margin: auto;
-    margin-top: 1.5em;
-    border-radius: 40px;
-    width: 10em;
-    height: 2.5em;
-    border: none;
-    text-align: center;
-} */
-
-.register-cta-sq{
+.cta-sq{
     background-color: #1259c3;
     color: white;
     font-size: 17px;
@@ -96,7 +82,7 @@
     text-align: center;
 }
 
-.register-cta-sq:hover{
+.cta-sq:hover{
     background: #3c88fa;
 }
 
@@ -122,4 +108,45 @@ textarea{
     font-size: 14px;
     color: rgb(172, 172, 172);
     font-weight: 300;
+}
+
+/* ------------------------------------ Media Query ------------------------------------*/
+
+@media(max-width: 361px){
+
+    body{
+        background-color: white;
+    }
+
+    .login-main{ 
+        text-align: center;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .login-registro{
+        max-width: 300px;
+        text-align: left;
+        line-height: 2.7em;
+        border: none;
+        box-shadow: none;
+        border-radius: 15px;
+        background-color: none;
+        padding: 30px;
+        margin: auto;
+    }
+
+    .h3-login {
+        max-width: 90%;
+        font-size: 18px;
+        line-height: 1em;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    footer{
+        border-top: solid 1px rgb(230, 230, 230);
+    }
 }
