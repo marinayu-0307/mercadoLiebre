@@ -261,7 +261,7 @@ footer p{
 }
 
 .copyright {
-    text-align: left;
+    text-align: center;
     padding: 20px;
 }
 
@@ -337,10 +337,6 @@ footer p{
     header{
         padding-top: 15px;
         max-height: 21vh;
-    }
-
-    #logo{
-        max-width: 25vw;
     }
 
     .nav-superior-mobile{
@@ -456,16 +452,34 @@ footer p{
         font-size: 3em;
     }
 
+    footer{
+        display:block;
+    }
+
+    .footer-elements{
+        padding-bottom: 10px;
+    }
+    .copyright{
+        display:block;
+        padding: 0px;
+    }
+
 }
 
 @media(min-width: 1200px){
 
     header{
         padding-top: 15px;
-        max-height: 21vh;
+        min-height: 50px;
+        max-height: 180px;
     }
+
+    .header-bloque a{
+        max-width: 300px;
+    }
+
     #logo{
-        max-width: 15vw;
+        width: 65%;
     }
 
     .nav-superior-mobile{
@@ -499,7 +513,9 @@ footer p{
         min-width: 420px;
         max-width: 660px;
         max-height: 35px;
-        margin: auto;
+        margin-left: -50px;
+        margin-right: 20px;
+        /* margin: auto; */
     }
 
     .searchbar-imput{

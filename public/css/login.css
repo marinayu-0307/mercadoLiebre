@@ -1,0 +1,125 @@
+/* boton disable #efefef */
+
+.register-main{ 
+    text-align: center;
+    font-size: 16px;
+}
+
+.login-registro{
+    max-width: 400px;
+    text-align: left;
+    line-height: 2.7em;
+    border:solid 1px rgb(206, 205, 205);
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 3.5em;
+}
+
+.login-registro h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.login-registro p{
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+
+.login-registro div{
+    margin-left: 25px;
+    margin-top: 22px;
+}
+
+/* ------------------------------------ LOGIN ------------------------------------*/
+
+.h3-login {
+    max-width: 90%;
+    font-size: 22px;
+    line-height: 1.4em;
+    text-align: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.button-texto{
+    color: #1259c3;
+    background-color: #fff;
+    font-weight: 400;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.button-forgot{
+    border: none;
+    color: #1259c3;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+/* .register-cta-round{
+    background-color: #1259c3;
+    color: white;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    border-radius: 40px;
+    width: 10em;
+    height: 2.5em;
+    border: none;
+    text-align: center;
+} */
+
+.register-cta-sq{
+    background-color: #1259c3;
+    color: white;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    border-radius: 6px;
+    width: 85%;
+    height: 2.3em;
+    border: none;
+    text-align: center;
+}
+
+.register-cta-sq:hover{
+    background: #3c88fa;
+}
+
+form{
+    padding: 15px 10vw;
+}
+
+main input{
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    height: 1.7em;
+    border: solid rgb(179, 179, 179) 1px;
+}
+
+textarea{
+    display: block;
+    margin: auto;
+}
+
+::placeholder{
+    padding: 9px 9px;
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+    font-weight: 300;
+}

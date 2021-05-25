@@ -1,0 +1,304 @@
+/* boton disable #efefef
+*{
+    border: solid 1px green;
+} */
+
+.tyc{
+    color:#1259c3;
+}
+
+.h3-p{
+    text-align: center;
+    border-bottom: solid 1px rgb(230, 230, 230);
+    padding: 10px 0px 20px 0px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: rgb(61, 61, 61);
+}
+
+h5{
+    text-align: left;
+    font-weight: 500;
+    color: #1259c3;
+    font-size: 18px;
+}
+
+.register-main{ 
+    text-align: center;
+    font-size: 16px;
+    margin: 75px 0px;
+}
+
+.register-titulo{
+    padding: 10px;
+    margin: 10px;
+}
+
+.register-registro{
+    max-width: 700px;
+    text-align: left;
+    /* line-height: 2.7em; */
+    border:solid 1px rgb(206, 205, 205);
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 3.5em;
+}
+
+.register-form1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-input1{
+    display: block;
+    min-width: 250px;
+    margin: 10px 30px 30px 20px
+}
+
+.register-labe1{
+    margin: 20px
+}
+
+.register-registro h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.register-cheklist{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between; 
+}
+
+.register-perfilusuario{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-top: solid 1px rgb(230, 230, 230);
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+
+.register-perfilusuario h5{
+    padding-bottom: 7px;
+}
+
+.register-perfilusuario-checklist{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between; 
+}
+
+
+.register-perfilusuario label{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+.register-perfilusuario input{
+    padding-right: 10px;
+}
+
+
+/* ------------------------------------ Usuario Categorias ------------------------------------*/
+
+.register-categorias{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.register-categorias-titulo{
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 0px 0px;
+}
+
+.register-categorias-texto{
+    font-weight: 300;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.register-categorias-checkbox{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+    justify-content: space-between; 
+}
+
+.register-categorias-checkbox label{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    min-width: 100%;
+    justify-content: space-between;
+}
+
+
+/* ------------------------------------ Formulario 2 ------------------------------------*/
+
+
+.register-form2{
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding-top: 20px;
+    border-top: solid 1px rgb(230, 230, 230);
+    border-bottom: solid 1px rgb(230, 230, 230);
+}
+
+.register-input2{
+    display: block;
+    min-width: 250px;
+    margin: 10px 30px 30px 20px
+}
+
+.register-labe2{
+    margin: 20px
+}
+
+
+.register-foto{
+    height: 33px;
+    display: block;
+    width: 250px;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+::-webkit-file-upload-button{
+    margin: 3px;
+}
+
+
+/* ------------------------------------ Botones CTA ------------------------------------*/
+
+
+.button-texto{
+    color: #1259c3;
+    background-color: #fff;
+    font-weight: 400;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.button-forgot{
+    border: none;
+    color: #1259c3;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.register-cta-sq{
+    background-color: #1259c3;
+    color: white;
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+    width: 40%;
+    height: 2.5em;
+    border: none;
+    text-align: center;
+}
+
+.register-cta-sq:hover{
+    background: #3c88fa;
+}
+
+.register-cancel{
+    background-color: #fff;
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+    width: 40%;
+    height: 2.5em;
+    border: solid 1px rgb(192, 192, 192);
+    text-align: center;
+}
+
+.register-cancel:hover{
+    color: black;
+}
+
+
+.botonx2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+}
+
+/* ------------------------------------ Terminos y Condiciones ------------------------------------*/
+
+.terminosycondiciones{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    margin-top: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 12px;
+    width: 85%;
+}
+
+.tyctexto{
+    padding: 0px 10px;
+}
+
+
+/* ------------------------------------ Miscelaneos ------------------------------------*/
+
+
+form{
+    padding: 15px 10vw;
+}
+
+main input{
+    /* display: block;
+    width: 90%; */
+    margin-top: 0px;
+    border-radius: 5px;
+    height: 1.7em;
+    border: solid rgb(179, 179, 179) 1px;
+}
+
+
+::placeholder{
+    padding: 9px 9px;
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+    font-weight: 300;
+}

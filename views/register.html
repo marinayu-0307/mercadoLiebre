@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Registro</title>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/register.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+<body class="register">
+    <header>
+        <div class="header-bloque">
+            <div class="nav-superior">
+                <div class="nav-superior-mobile">
+                    <a href="/">
+                        <img id="logo" src="images/logo-mercado-liebre.svg" alt="logo">
+                    </a>
+                    
+                    <div class="barraBusqueda">
+                        <input class="searchbar-imput" type="text" placeholder="Buscar productos, marcas">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <h3 class="header-copy"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sun tarjeta de crédito</h3>
+            </div>
+
+            <div class="nav-superior-tablet">
+                    <a href="/">
+                        <img id="logo" src="images/logo-mercado-liebre.svg" alt="logo">
+                    </a>
+
+                    <div class="barraBusqueda">
+                        <input class="searchbar-imput" type="text" placeholder="Buscar productos, marcas">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="header-copy"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sun tarjeta de crédito</h3>
+            </div>
+
+            <div class="nav-item"> 
+                <nav class="nav-menu">
+                    <ul class="left-navbar">
+                        <li> <a href="#"> Ofertas </a> </li>
+                        <li> <a href="#"> Tiendas Oficiales </a> </li>
+                        <li> <a href="#"> Vender </a> </li>
+                        <li> <a href="#"> Ayuda </a> </li>
+                    </ul>
+
+                    <ul class="right-navbar">
+                        <li> <a href="/register"> Creá tu cuenta <i class="far fa-id-card"></i> </a> </li>
+                        <li><a href="/login"> Ingresá <i class="fas fa-sign-in-alt"></i> </a> </li>
+                        <li><a href="#"> Mis compras <i class="fas fa-shopping-basket"></i> </a> </li>
+                    </ul>
+                </nav>
+
+                <div class="boton-burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+            
+    </header>
+
+    <main class="register-main">
+
+        <form class="register-registro" action="/#" method="POST">
+            <div class="register-titulo">
+                <h3>¡Bienvenidos a Mercadoliebre!</h3>
+                <p class="h3-p">Creá tu cuenta para una experiencia óptima</p>
+            </div>
+            
+            <div class="register-form1">
+                <div>
+                    <label class="register-labe1">Nombre</label>
+                    <input class="register-input1" type="text" name="nombre" placeholder="Fulanito"required>
+                </div>
+
+                <div>
+                    <label class="register-labe1">Apellido</label>
+                    <input class="register-input1" type="text" name="apellido" placeholder="Pérez" required>
+                </div>
+
+                <div>
+                    <label class="register-labe1">Usuario</label>
+                    <input class="register-input1" type="text" name="usuario" placeholder="Ingresa tu nombre de usuario" required>
+                </div>
+
+                <div>
+                    <label class="register-labe1">Fecha de nacimiento</label>
+                    <input class="register-input1" type="date" name="nacimiento" placeholder="YYYY-MM-DD">
+                </div>
+            </div>
+
+            <div class="register-perfilusuario">
+                <h5>Perfil de Usuario</h5>
+
+                <div class="register-perfilusuario-checklist">
+
+                    <input type="radio" name="tipousuario" value="comprar">
+                    <label>
+                        Comprar
+                    </label>
+                </div>
+
+                <div class="register-perfilusuario-checklist">
+                    <input type="radio" name="tipousuario" value="vender">
+                    <label>
+                        Vender
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="register-categorias">
+                
+                <div class="register-categorias-titulo">
+                    <h5>Categorías de interés</h5>
+                    <p class="register-categorias-texto">Podés elegir más de una opción</p>
+                </div>
+
+                <div class="register-categorias-checkbox">
+                    <input type="checkbox" name="categoria" value="electro">
+                    <label>
+                        Electro
+                    </label>
+                </div>
+                
+                <div class="register-categorias-checkbox">
+                    <input type="checkbox" name="categoria" value="moda">
+                    <label>
+                        Moda
+                    </label>
+                </div>
+
+                <div class="register-categorias-checkbox">
+                    <input type="checkbox" name="categoria" value="hogar">
+                    <label>
+                        Hogar
+                    </label>
+                </div>
+                
+                <div class="register-categorias-checkbox">
+                    <input type="checkbox" name="categoria" value="jugueteria">
+                    <label>
+                        Juguetería
+                    </label>
+                </div>
+
+                <div class="register-categorias-checkbox">
+                    <input type="checkbox" name="categoria" value="vidasana">
+                    <label>
+                        Vida sana
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="register-form2">
+                <div>
+                    <label class="register-labe2">Foto de perfil</label>
+                    <input class="register-foto" type="file" accept=".jpg, .png" name="img">
+                </div>
+
+                <div>
+                    <label class="register-labe2">Contraseña</label>
+                    <input class="register-input2" type="password" name="password" placeholder="6 a 12 caracteres"required>
+                </div>
+
+                <div>
+                    <label class="register-labe2">Confirmar contraseña</label>
+                    <input class="register-input2" type="password" name="password" placeholder="Repetir contraseña"required>
+                </div>
+
+            </div>
+
+            <div class="botonx2">
+                <button class="register-cta-sq" type="submit" onclick="alert('Cuenta creada')"> Registrarse </button>
+                <button class="register-cancel" type="reset"> Borrar </button>
+            </div>
+
+            <div class="terminosycondiciones">
+                <input class="checkbox" type="checkbox" name="accept">
+                <label class="tyctexto"> Acepto los <a class="tyc" href="#"> Términos y Condiciones </a> y autorizo el uso de mis datos de acuerdo a la <a class="tyc" href="#"> Declaración de Privacidad. </a></label>            
+            </div>
+        
+
+        </form>
+
+    </main>
+
+    <footer>
+        <section class="footer-elements">
+            <ul>
+                <i class="iconofooter fas fa-credit-card"></i>
+                <h4 class="descripciones">Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o 
+                    efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </ul>
+
+            <ul>
+                <i class="iconofooter fas fa-gift"></i>
+                <h4 class="descripciones">Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </ul>
+
+            <ul>
+                <i class="iconofooter fas fa-user-shield"></i>
+                <h4 class="descripciones">Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </ul>
+            
+        </section>
+
+        <ul>
+            <p class="copyright">Copyright &#169; 1999-2020 MercadoLiebre S.R.L.</p>
+        </ul>
+
+    </footer>
+
+
+</body>
+</html>
