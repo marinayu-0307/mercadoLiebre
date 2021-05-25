@@ -27,16 +27,20 @@ body{
 
 header {
     background-color: #EAC926;
+    min-width: 100vw;
     padding: 5%;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     margin: auto;
+    position: fixed;
+    z-index: 10;
 }
 
 .header-bloque{
     max-width: 1200px;
     margin: auto;
+
 }
 
 #logo{
@@ -125,6 +129,8 @@ color: black
 main{
     border: 10%;
     margin: auto;
+    position: relative;
+    top: 135px;
 }
 
 .main-banner{
@@ -134,7 +140,8 @@ main{
 
 .main-row{
     max-width: 1200px;
-    margin:auto
+    margin:auto;
+    text-align: left;
 }
 
 #banner{
@@ -214,7 +221,7 @@ article .descripciones{
     font-size: 24px;
     text-align: center;
     color: #666;
-    padding: 20px;
+    padding: 20px 20px 0px 16px;
     margin-top: 20px;
 }
 
@@ -232,14 +239,16 @@ article .descripciones{
 .descripciones {
     font-size: 16px;
     color: #666;
-    display: none;
    }
 
 /* FOOTER */
 
 footer {
+    /* position: relative;
+    top: 135px; */
     background-color: white;
     margin: 5px;
+    margin-top: 130px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -258,6 +267,12 @@ footer p{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: font-size 1s;
+}
+
+.iconofooter:hover{
+    font-size: 2.5em;
+    color:#3c88fa;
 }
 
 .copyright {
@@ -265,7 +280,7 @@ footer p{
     padding: 20px;
 }
 
-/* MEDIA QUERYS */
+/* ----------------------------------- MEDIA QUERYS 361px ----------------------------------- */
 
 @media(min-width: 361px)
 {
@@ -289,13 +304,35 @@ footer p{
         margin-bottom: 0px;
     }
 
-    article {
+    article{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 35px;
+        transition: padding 1s;
+    }
+/* 
+    article:hover{
+        padding: 10px;
+    }
+
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100,100,100);
     }
 
-    .descripciones {
-        display: block;
+    article .descripciones {
+        display: none;
     }
+
+    article .descripciones:hover{
+        display: inside;
+    } */
+
+    .fa-truck-border{
+        position: relative;
+        left: 75%;
+        top:-35px
+    }
+
 
     .nav-menu{
         display: block;
@@ -332,7 +369,14 @@ footer p{
 
 }
 
+/* ----------------------------------- MEDIA QUERYS 761px ----------------------------------- */
+
 @media(min-width: 761px){
+
+    main{
+        position: relative;
+        top: 170px;
+    }
 
     header{
         padding-top: 15px;
@@ -386,15 +430,21 @@ footer p{
     }
   
     .titulares{
-        margin: 0px;
-        padding-left: 0px;
+        margin: 0px 0px 0px 10px;
+        padding-right: 10px;
         text-align: left;
     }
 
     article{
         max-width: 42vw;
         margin-bottom: 60px;
+        transition: padding 1s;
+        /* transition: box-shadow 1s; */
+    }
+
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100,100,100);
+        padding: 15px
     }
 
     article .section-article-descripcion{
@@ -452,8 +502,14 @@ footer p{
         font-size: 3em;
     }
 
+    .iconofooter:hover{
+        font-size: 3.5em;
+    }
+
     footer{
         display:block;
+        position: relative;
+        top: 170px;
     }
 
     .footer-elements{
@@ -466,7 +522,15 @@ footer p{
 
 }
 
+
+/* ----------------------------------- MEDIA QUERYS 1200px ----------------------------------- */
+
 @media(min-width: 1200px){
+
+    main{
+        position: relative;
+        top: 155px;
+    }
 
     header{
         padding-top: 15px;
@@ -545,15 +609,24 @@ footer p{
         padding-top: 2.5vh;
         padding-bottom: 0.5vh;
     }
+
+    section article{
+        margin-bottom: 8px;
+    }
   
     .titulares{
         margin: 0px;
-        padding-left: 0px;
         text-align: left;
     }
 
     article{
-        max-width: 250px;
+        max-width: 255px;
+        transition: padding 1s;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        padding: 15px;
     }
 
     article .section-article-descripcion{
@@ -563,7 +636,6 @@ footer p{
     article .descripciones{
         padding: 0px 25px 25px 35px;
     }
-
 
     .fa-truck{
         font-size: 1.3em;
@@ -577,6 +649,8 @@ footer p{
     }
     
     footer{
+        position: relative;
+        top: 155px;
         display: block;
         margin-top: 5vh;
     }
@@ -593,8 +667,8 @@ footer p{
         margin: 10px 0px;
     }
 
-    .iconofooter{
-        font-size: 3em;
+    .iconofooter:hover{
+        font-size: 4em;
     }
 
     section ul{

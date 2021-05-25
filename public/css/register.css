@@ -35,7 +35,7 @@ h5{
 }
 
 .register-registro{
-    max-width: 700px;
+    max-width: 750px;
     text-align: left;
     /* line-height: 2.7em; */
     border:solid 1px rgb(206, 205, 205);
@@ -54,7 +54,7 @@ h5{
 
 .register-input1{
     display: block;
-    min-width: 250px;
+    min-width: 280px;
     margin: 10px 30px 30px 20px
 }
 
@@ -309,6 +309,7 @@ main input{
 
 @media(max-width: 361px){
 
+    
     body{
         background-color: white;
     }
@@ -388,7 +389,6 @@ main input{
     .register-foto{
         height: 35px;
         min-width: none;
-        width: 200px;
         margin: 10px 0px 10px 0px;
     }
 
