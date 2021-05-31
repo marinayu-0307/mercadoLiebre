@@ -121,7 +121,7 @@ main{
     border: 10%;
     margin: auto;
     position: relative;
-    top: 135px;
+    top: 140px;
 }
 
 .main-banner{
@@ -264,9 +264,9 @@ footer .descripciones{
     padding: 20px;
 }
 
-/* ----------------------------------- MEDIA QUERYS 361px ----------------------------------- */
+/* ----------------------------------- MEDIA QUERYS 380px ----------------------------------- */
 
-@media(min-width: 361px)
+@media(min-width: 380px)
 {
     #logo{
         max-width: 25vw;
