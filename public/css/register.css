@@ -157,8 +157,6 @@ h5{
 
 
 .register-form2{
-    /* display: flex;
-    flex-wrap: wrap; */
     padding-top: 20px;
     border-top: solid 1px rgb(230, 230, 230);
     border-bottom: solid 1px rgb(230, 230, 230);
@@ -282,8 +280,6 @@ form{
 }
 
 main input{
-    /* display: block;
-    width: 90%; */
     margin-top: 0px;
     border-radius: 5px;
     height: 1.7em;

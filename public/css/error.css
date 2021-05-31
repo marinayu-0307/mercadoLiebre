@@ -25,6 +25,23 @@ h1{
     margin-bottom: 5vh;
 }
 
+.fas{
+    animation: saltar 0.5s alternate infinite;
+    margin-left: 5px;
+}
+
+
+@keyframes saltar {
+    0% {
+        transform: translateY(0px) scale(0.7);
+    }
+
+    100%{
+        transform: translateY(-10px) scale(0.9); 
+    }
+}
+
+
 h2{
     font-size: 35px;
     text-align: left;
@@ -96,6 +113,18 @@ img{
         margin:10%
     }
 
+    .fas{
+        animation: color 0.75s alternate infinite;
+        margin-left: 5px;
+    }
+    
+    
+    @keyframes color {
+        0% {color: black; font-size:50px ;}
+        50% {color: #1259c3;}
+        100% {color: rgb(224, 58, 58);}
+    }
+    
     h1{
         font-size: 8vh;
         margin: 0;
@@ -139,6 +168,17 @@ img{
     h1{
         font-size: 5vh;
         margin: 0;
+    }
+
+    .fas{
+        animation: color 1s alternate infinite;
+        margin-left: 5px;
+    }
+    
+    @keyframes color {
+        0% {color: black;}
+        50% {color: #1259c3;}
+        100% {color: rgb(224, 58, 58);}
     }
 
     h2{
