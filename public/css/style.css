@@ -153,7 +153,6 @@ section{
 article {
     margin-bottom: 10px;
     background-color: white;
-    /* border: dashed salmon 1px */
 }
 
 article .section-article-descripcion{
@@ -162,7 +161,6 @@ article .section-article-descripcion{
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    /* border: dashed red 1px */
 }
 
 article .descripciones{
@@ -170,7 +168,6 @@ article .descripciones{
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    /* border: dashed red 1px */
 }
 
 
@@ -418,16 +415,14 @@ footer .descripciones{
         font-size: 15px;
     }
 
-/* ------------------------------------------------------------ */
+/* --------------------------Mostrar/Ocultar descripciones---------------------------------- */
 
     article .descripciones {
         visibility: hidden;
-        /* padding:0px 25px 0px 35px ; */
     }
 
     .main-row article:hover > .descripciones{
         visibility: visible;
-        /* padding:0px 25px 25px 35px ; */
     }
 
 /* ------------------------------------------------------------ */
@@ -604,7 +599,6 @@ footer .descripciones{
 
     .main-row article:hover > .descripciones{
         visibility: visible;
-        /* padding:0px 25px 10px 35px; */
     }
 
     .fa-truck{
