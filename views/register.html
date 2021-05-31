@@ -84,17 +84,17 @@
             <div class="register-form1">
                 <div>
                     <label class="register-labe1">Nombre</label>
-                    <input class="register-input1" type="text" name="nombre" placeholder="Ingresalo tal como figura en tu documento"required>
+                    <input class="register-input1" type="text" name="nombre" minlength="2" placeholder="Ingresalo tal como figura en tu documento" required>
                 </div>
 
                 <div>
                     <label class="register-labe1">Apellido</label>
-                    <input class="register-input1" type="text" name="apellido" placeholder="Ingresalo tal como figura en tu documento" required>
+                    <input class="register-input1" type="text" name="apellido" minlength="2" placeholder="Ingresalo tal como figura en tu documento" required>
                 </div>
 
                 <div>
                     <label class="register-labe1">Usuario</label>
-                    <input class="register-input1" type="text" name="usuario" placeholder="Ingresa tu nombre de usuario" required>
+                    <input class="register-input1" type="text" name="usuario" minlength="2" placeholder="Ingresa tu nombre de usuario" required>
                 </div>
 
                 <div>
@@ -108,17 +108,13 @@
 
                 <div class="register-perfilusuario-checklist">
 
-                    <input type="radio" name="tipousuario" value="comprar">
-                    <label>
-                        Comprar
-                    </label>
+                    <input type="radio" id="Comprar" name="tipousuario" value="comprar">
+                    <label for="Comprar">Comprar</label>
                 </div>
 
                 <div class="register-perfilusuario-checklist">
-                    <input type="radio" name="tipousuario" value="vender">
-                    <label>
-                        Vender
-                    </label>
+                    <input type="radio" id="Vender" name="tipousuario" value="vender">
+                    <label for="Vender">Vender</label>
                 </div>
 
             </div>
@@ -131,38 +127,28 @@
                 </div>
 
                 <div class="register-categorias-checkbox">
-                    <input type="checkbox" name="categoria" value="electro">
-                    <label>
-                        Electro
-                    </label>
+                    <input type="checkbox" id="Electro" name="categoria" value="electro">
+                    <label for="Electro">Electro</label>
                 </div>
                 
                 <div class="register-categorias-checkbox">
-                    <input type="checkbox" name="categoria" value="moda">
-                    <label>
-                        Moda
-                    </label>
+                    <input type="checkbox" id="Moda" name="categoria" value="moda">
+                    <label for="Moda">Moda</label>
                 </div>
 
                 <div class="register-categorias-checkbox">
-                    <input type="checkbox" name="categoria" value="hogar">
-                    <label>
-                        Hogar
-                    </label>
+                    <input type="checkbox" id="Hogar" name="categoria" value="hogar">
+                    <label for="Hogar">Hogar</label>
                 </div>
                 
                 <div class="register-categorias-checkbox">
-                    <input type="checkbox" name="categoria" value="jugueteria">
-                    <label>
-                        Juguetería
-                    </label>
+                    <input type="checkbox" id="Juguetería" name="categoria" value="jugueteria">
+                    <label for="Juguetería">Juguetería</label>
                 </div>
 
                 <div class="register-categorias-checkbox">
-                    <input type="checkbox" name="categoria" value="vidasana">
-                    <label>
-                        Vida sana
-                    </label>
+                    <input type="checkbox" id="Vida sana" name="categoria" value="vidasana">
+                    <label for="Vida sana">Vida sana</label>
                 </div>
 
             </div>
@@ -175,12 +161,12 @@
 
                 <div>
                     <label class="register-labe2">Contraseña</label>
-                    <input class="register-input2" type="password" name="password" placeholder="6 a 12 caracteres"required>
+                    <input class="register-input2" type="password" name="password" minlength="6" placeholder="Mínimo 6 caracteres"required>
                 </div>
 
                 <div>
                     <label class="register-labe2">Confirmar contraseña</label>
-                    <input class="register-input2" type="password" name="password" placeholder="Repetir contraseña"required>
+                    <input class="register-input2" type="password" name="password" minlength="6" placeholder="Repetir contraseña"required>
                 </div>
 
             </div>
