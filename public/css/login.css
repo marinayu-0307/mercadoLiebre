@@ -1,5 +1,3 @@
-/* boton disable #efefef */
-
 .login-main{ 
     text-align: center;
     font-size: 16px;
@@ -19,11 +17,6 @@
     margin-top: 3.5em;
 }
 
-.login-registro h3{
-    /* font-size: 22px; */
-    font-weight: 500;
-}
-
 .login-registro p{
     text-align: center;
     padding-bottom: 10px;
@@ -39,6 +32,7 @@
 }
 
 .h3-login {
+    font-weight: 500;
     max-width: 90%;
     font-size: 22px;
     line-height: 1.4em;
@@ -122,6 +116,7 @@ textarea{
         text-align: center;
         font-size: 14px;
         margin: 0px;
+        margin-bottom: 150px;
     }
 
     .login-registro{
