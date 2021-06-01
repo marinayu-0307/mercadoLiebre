@@ -1,5 +1,29 @@
-.tyc{
-    color:#1259c3;
+.register-main{ 
+    text-align: center;
+    font-size: 16px;
+    margin: 75px 0px;
+}
+
+.register-registro{
+    max-width: 750px;
+    text-align: left;
+    border:solid 1px rgb(206, 205, 205);
+    box-shadow: 0px 0px 10px rgb(202, 202, 202);
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 3.5em;
+}
+
+.register-titulo{
+    padding: 10px;
+    margin: 10px;
+}
+
+.register-registro h3{
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .h3-p{
@@ -11,40 +35,15 @@
     color: rgb(61, 61, 61);
 }
 
-h5{
-    text-align: left;
-    font-weight: 500;
-    color: #1259c3;
-    font-size: 18px;
-}
-
-.register-main{ 
-    text-align: center;
-    font-size: 16px;
-    margin: 75px 0px;
-}
-
-.register-titulo{
-    padding: 10px;
-    margin: 10px;
-}
-
-.register-registro{
-    max-width: 750px;
-    text-align: left;
-    /* line-height: 2.7em; */
-    border:solid 1px rgb(206, 205, 205);
-    box-shadow: 0px 0px 10px rgb(202, 202, 202);
-    border-radius: 15px;
-    background-color: #fff;
-    padding: 30px;
-    margin: auto;
-    margin-top: 3.5em;
-}
+/* ------------------------------------ Formulario 1  ------------------------------------*/
 
 .register-form1{
     display: flex;
     flex-wrap: wrap;
+}
+
+.register-labe1{
+    margin: 20px
 }
 
 .register-input1{
@@ -53,24 +52,7 @@ h5{
     margin: 10px 30px 30px 20px
 }
 
-.register-labe1{
-    margin: 20px
-}
-
-.register-registro h3{
-    font-size: 22px;
-    font-weight: 500;
-}
-
-
-.register-cheklist{
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 15px;
-    justify-content: space-between; 
-}
+/* ------------------------------------ Perfil de Usuario  ------------------------------------*/
 
 .register-perfilusuario{
     text-align: left;
@@ -81,6 +63,13 @@ h5{
     padding-top: 25px;
     border-top: solid 1px rgb(230, 230, 230);
     border-bottom: solid 1px rgb(230, 230, 230);
+}
+
+h5{
+    text-align: left;
+    font-weight: 500;
+    color: #1259c3;
+    font-size: 18px;
 }
 
 .register-perfilusuario h5{
@@ -95,7 +84,6 @@ h5{
     margin-left: 15px;
     justify-content: space-between; 
 }
-
 
 .register-perfilusuario label{
     text-align: left;
@@ -172,7 +160,6 @@ h5{
     margin: 20px
 }
 
-
 .register-foto{
     height: 33px;
     display: block;
@@ -183,7 +170,6 @@ h5{
     margin-top: 10px;
 }
 
-
 ::-webkit-file-upload-button{
     margin: 3px;
 }
@@ -191,24 +177,12 @@ h5{
 
 /* ------------------------------------ Botones CTA ------------------------------------*/
 
-
-.button-texto{
-    color: #1259c3;
-    background-color: #fff;
-    font-weight: 400;
-    border: none;
-    display: block;
-    margin: auto;
-    margin-top: 25px;
-}
-
-.button-forgot{
-    border: none;
-    color: #1259c3;
-    background-color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-
+.botonx2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
 }
 
 .register-cta-sq{
@@ -245,15 +219,6 @@ h5{
     color: black;
 }
 
-
-.botonx2{
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    padding-top: 2.5em;
-    padding-bottom: 1em;
-}
-
 /* ------------------------------------ Terminos y Condiciones ------------------------------------*/
 
 .terminosycondiciones{
@@ -271,6 +236,9 @@ h5{
     padding: 0px 10px;
 }
 
+.tyc{
+    color:#1259c3;
+}
 
 /* ------------------------------------ Miscelaneos ------------------------------------*/
 
@@ -285,7 +253,6 @@ main input{
     height: 1.7em;
     border: solid rgb(179, 179, 179) 1px;
 }
-
 
 ::placeholder{
     padding: 9px 9px;
