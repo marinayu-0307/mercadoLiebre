@@ -649,9 +649,4 @@ footer .descripciones{
     section ul{
         max-width: 25vw;
     }
-
-    .copyright{
-        display:block;
-        text-align: center
-    }
 }
